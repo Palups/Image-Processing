@@ -23,12 +23,32 @@ public class Exercicio_01 {
         for(int y = 0; y < img.getHeight(); y++) {
             for (int x = 0; x < img.getWidth(); x++) {
                 Color color = new Color(img.getRGB(x, y));
-                int r = saturation((int)(color.getRed() * intensity));
-                int g = saturation((int)(color.getGreen() * intensity));
-                int b = saturation((int)(color.getBlue() * intensity));
+                if(intensity > 0) {
+                    int r = saturation((int) (color.getRed() * intensity));
+                    int g = saturation((int) (color.getGreen() * intensity));
+                    int b = saturation((int) (color.getBlue() * intensity));
 
-                Color outColor = new Color(r, g, b);
-                out.setRGB(x, y, outColor.getRGB());
+                    Color outColor = new Color(r, g, b);
+                    out.setRGB(x, y, outColor.getRGB());
+                }
+                else if(intensity >= -1 && intensity <= 0){
+                    int r = saturation((int) (color.getRed() * (1 + intensity)));
+                    int g = saturation((int) (color.getGreen() * (1 + intensity)));
+                    int b = saturation((int) (color.getBlue() * (1 + intensity)));
+
+                    Color outColor = new Color(r, g, b);
+                    out.setRGB(x, y, outColor.getRGB());
+                }
+                else{
+                    intensity = 0.0f;
+
+                    int r = saturation((int) (color.getRed() * intensity));
+                    int g = saturation((int) (color.getGreen() * intensity));
+                    int b = saturation((int) (color.getBlue() * intensity));
+
+                    Color outColor = new Color(r, g, b);
+                    out.setRGB(x, y, outColor.getRGB());
+                }
             }
         }
         return out;
