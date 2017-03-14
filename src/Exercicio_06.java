@@ -1,10 +1,10 @@
-import java.awt.*;
-import java.awt.image.BufferedImage;
+/*import java.awt.*;
+import java.awt.image.BufferedImage;*/
 
 /**
  * Created by Palups on 13/03/2017.
  */
-public class Exercicio_06 {
+/*public class Exercicio_06 {
 
     float media[][] = {
             {1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f},
@@ -52,4 +52,4 @@ public class Exercicio_06 {
     public static void main(String [] args){
 
     }
-}
+}*/
