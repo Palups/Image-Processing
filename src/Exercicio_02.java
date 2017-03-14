@@ -44,8 +44,8 @@ public class Exercicio_02 {
         String PATH = "C:\\Users\\Palups\\Documents\\img\\cor";
         BufferedImage img = ImageIO.read(new File(PATH, "puppy.png"));
 
-        //BufferedImage bwImg = grayScale(img);
-        BufferedImage bwImg = threshold(img, 50);
+        BufferedImage bwImg = grayScale(img);
+        //BufferedImage bwImg = threshold(img, 50);
 
         ImageIO.write(bwImg, "png", new File("bwImg.png"));
     }
