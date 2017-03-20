@@ -1,13 +1,13 @@
-import javax.imageio.ImageIO;
+/*import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
+import java.io.IOException;*/
 
 /**
  * Created by Palups on 14/03/2017.
  */
-public class Exercicio_05 {
+/*public class Exercicio_05 {
 
     public Color getRGBf(){
         return getRGBf();
@@ -52,4 +52,4 @@ public class Exercicio_05 {
     public static void main(String [] args) throws IOException {
         new Exercicio_05().run();
     }
-}
+}*/
