@@ -7,14 +7,15 @@ import java.io.IOException;
 /**
  * Created by Palups on 18/03/2017.
  */
-/*public class Atividade_01 {
+public class Atividade_01 {
+
 
 
     public static BufferedImage rgbToEga(BufferedImage img){
-        BufferedImage out = new BufferedImage(img.getWidth(), img.getWidth(), BufferedImage.TYPE_INT_RGB);
+        BufferedImage out = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
 
-        for(int y = 0; y < img.getHeight(); y++){
-            for(int x = 0; x < img.getWidth(); x++){
+        for(int x = 0; x < img.getWidth(); x++){
+            for(int y = 0; y < img.getHeight(); y++){
                 Color color = new Color(img.getRGB(x, y));
                 int r = color.getRed();
                 int g = color.getGreen();
@@ -40,4 +41,4 @@ import java.io.IOException;
     public static void main(String [] args) throws IOException {
         new Atividade_01().run();
     }
-}*/
+}

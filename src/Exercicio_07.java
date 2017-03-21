@@ -1,13 +1,13 @@
-import javax.imageio.ImageIO;
+/*import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
+import java.io.IOException;*/
 
 /**
  * Created by Palups on 20/03/2017.
  */
-public class Exercicio_07 {
+/*public class Exercicio_07 {
 
     public static BufferedImage rgbToHsv(BufferedImage img){
         BufferedImage out = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
@@ -32,4 +32,4 @@ public class Exercicio_07 {
     public static void main(String [] args){
 
     }
-}
+}*/
