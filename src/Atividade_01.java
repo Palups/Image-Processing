@@ -9,7 +9,16 @@ import java.io.IOException;
  */
 public class Atividade_01 {
 
-
+    public static int newValue(int value){
+        if(value <= 64)
+            return 0;  //32
+        else if(value > 64 && value <= 128)
+            return 64; //96
+        else if(value > 128 && value <= 192)
+            return 128; //160
+        else
+            return 255; //223
+    }
 
     public static BufferedImage rgbToEga(BufferedImage img){
         BufferedImage out = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
@@ -17,9 +26,9 @@ public class Atividade_01 {
         for(int x = 0; x < img.getWidth(); x++){
             for(int y = 0; y < img.getHeight(); y++){
                 Color color = new Color(img.getRGB(x, y));
-                int r = color.getRed();
-                int g = color.getGreen();
-                int b = color.getBlue();
+                int r = newValue(color.getRed());
+                int g = newValue(color.getGreen());
+                int b = newValue(color.getBlue());
 
                 Color outColor = new Color(r, g, b);
                 out.setRGB(x, y, outColor.getRGB());
