@@ -9,6 +9,20 @@ import java.io.IOException;
  */
 public class Exercicio_09 {
 
+    int[] acumHistogram(BufferedImage img){
+        BufferedImage out = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
+
+        int[] acumArmazem = new int[256];
+
+        for (int i = 0; i < 256; i++) {
+            acumArmazem[i] = 0;
+        }
+
+
+
+        return acumArmazem;
+    }
+
     int[] histogram(BufferedImage img){
         BufferedImage out = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
 
@@ -24,18 +38,24 @@ public class Exercicio_09 {
                 Color color = new Color(img.getRGB(x, y));
                 int b = color.getBlue();
                 armazem[b] += 1;
-
             }
         }
         return armazem;
     }
 
-//    public void run() throws IOException {
-//        String PATH = "C:\\Users\\Palups\\Documents\\img\\cor";
-//        BufferedImage img = ImageIO.read(new File(PATH, "puppy.png"));
-//    }
+    public void run() throws IOException {
+        String PATH = "C:\\Users\\Palups\\Documents\\img\\cor";
+        BufferedImage img = ImageIO.read(new File(PATH, "puppy.png"));
 
-    public static void main(String [] args){
+        int[] receiver;
+        receiver = histogram(img);
 
+        for(int i = 0; i < 256; i++) {
+            System.out.print(receiver[i] + ", ");
+        }
+    }
+
+    public static void main(String [] args) throws IOException {
+        new Exercicio_09().run();
     }
 }
