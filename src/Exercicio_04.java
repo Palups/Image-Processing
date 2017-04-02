@@ -45,7 +45,7 @@ public class Exercicio_04 {
 
         BufferedImage img3 = lerp(img1, img2, 0.5f);
 
-        ImageIO.write(img3, "jpg", new File("img_result.jpg"));
+        ImageIO.write(img3, "jpg", new File("ex_04_img_result.jpg"));
     }
 
     public static void main(String [] args) throws IOException {

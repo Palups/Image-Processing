@@ -47,7 +47,7 @@ public class Exercicio_07 {
 
         BufferedImage hsvImg = rgbToHsv(img);
 
-        ImageIO.write(hsvImg, "png", new File("hsvImg.png"));
+        ImageIO.write(hsvImg, "png", new File("ex_07_hsvImg.png"));
     }
 
     public static void main(String [] args) throws IOException {

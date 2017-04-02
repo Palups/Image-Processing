@@ -24,6 +24,6 @@ public class ExercicioSala {
             r += increment;
         }
 
-        ImageIO.write(image, "png", new File("red.png"));
+        ImageIO.write(image, "png", new File("ex_sala_01_red.png"));
     }
 }

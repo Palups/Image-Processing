@@ -80,8 +80,8 @@ public class Exercicio_02 {
         BufferedImage grayScale_IMG = grayScale(img);
         BufferedImage threshold_IMG = threshold(img, 120);
 
-        ImageIO.write(grayScale_IMG, "png", new File("grayScale.png"));
-        ImageIO.write(threshold_IMG, "png", new File("threshold.png"));
+        ImageIO.write(grayScale_IMG, "png", new File("ex_02_grayScale.png"));
+        ImageIO.write(threshold_IMG, "png", new File("ex_02_threshold.png"));
     }
 
     public static void main(String [] args) throws IOException {

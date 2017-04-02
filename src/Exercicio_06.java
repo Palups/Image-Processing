@@ -78,7 +78,7 @@ public class Exercicio_06 {
 
         BufferedImage convImg = convolve(img, media);
 
-        ImageIO.write(convImg, "png", new File("convImg.png"));
+        ImageIO.write(convImg, "png", new File("ex_06_convImg.png"));
     }
 
     public static void main(String [] args) throws IOException {

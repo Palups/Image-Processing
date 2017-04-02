@@ -61,8 +61,8 @@ public class Exercicio_01 {
         BufferedImage darkImg = bright(img, 0.5f);
         BufferedImage brightImg = bright(img, 2.0f);
 
-        ImageIO.write(darkImg, "png", new File("darkPuppy.png"));
-        ImageIO.write(brightImg, "png", new File("brightPuppy.png"));
+        ImageIO.write(darkImg, "png", new File("ex_01_darkPuppy.png"));
+        ImageIO.write(brightImg, "png", new File("ex_01_brightPuppy.png"));
     }
 
     public static void main(String [] args) throws IOException {

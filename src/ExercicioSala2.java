@@ -40,7 +40,7 @@ public class ExercicioSala2 {
         BufferedImage maiLiroPonei = ImageIO.read(new File(PATH, "puppy.png"));
 
         BufferedImage negativoPonei = negative(maiLiroPonei);
-        ImageIO.write(negativoPonei, "png", new File("negativePuppy.png"));
+        ImageIO.write(negativoPonei, "png", new File("ex_sala_02_negativePuppy.png"));
     }
 
     public static void main(String [] args) throws IOException {

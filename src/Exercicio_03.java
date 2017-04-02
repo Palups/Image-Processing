@@ -91,7 +91,7 @@ public class Exercicio_03 {
 
         BufferedImage img3 = subtract(img1, img2);
 
-        ImageIO.write(img3, "png", new File("errosB3.png"));
+        ImageIO.write(img3, "png", new File("ex_03_errosB3.png"));
     }
 
 
