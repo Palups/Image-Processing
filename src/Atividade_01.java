@@ -44,7 +44,7 @@ public class Atividade_01 {
 
         BufferedImage egaImg = rgbToEga(img);
 
-        ImageIO.write(egaImg, "png", new File("egaImg.png"));
+        ImageIO.write(egaImg, "png", new File("atividade01.png"));
     }
 
     public static void main(String [] args) throws IOException {
